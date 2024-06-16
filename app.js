@@ -17,8 +17,6 @@
       };
       return ddo;
   }
-
-
   NarrowItDownController.$inject = ['MenuSearchService'];
   function NarrowItDownController(MenuSearchService) {
     var narrowCtrl = this;
@@ -39,14 +37,10 @@
           });
       }
     }
-
     narrowCtrl.remove = function (index) {
       narrowCtrl.found.splice(index, 1);
     }
-
   }
-
-
   MenuSearchService.$inject = ['$http', 'ApiBasePath'];
   function MenuSearchService($http, ApiBasePath) {
     var service = this;
